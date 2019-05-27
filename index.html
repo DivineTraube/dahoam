@@ -1,0 +1,79 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-title" content="Plumbus">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script defer src="/js/jquery.min.js"></script>
+    <script defer src="/js/bootstrap.bundle.min.js"></script>
+    <script async src="https://www.baqend.com/js-sdk/latest/baqend.min.js"></script>
+    <!-- Install Speed Kit -->
+    <script src="https://dahoam.app.baqend.com/v1/speedkit/install.js?d=dahoam.app.baqend.com"></script>
+    <link rel="manifest" href="/manifest.json">
+    <script src="/js/script.js"></script>
+    <title>Rick and Morty Fan Shop</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/"><img class="logo" src="/img/logo.png"> Fan Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link active" href="/">Plumbus<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/portals">Portal Guns</a>
+        </div>
+        <span class="navbar-text">
+            <a href="/cart"><span class="cardinality"></span> <i class="fas fa-shopping-cart"> </i> Shopping Cart</a>
+        </span>
+    </div>
+</nav>
+<div class="container mt-4">
+    <button type="button" class="btn btn-light float-right notifications" data-ean="3">Notifications!</button>
+    <h1>Recommendations For You!</h1>
+    <div class="recommendations">
+    </div>
+</div>
+<div class="container mt-4">
+    <h1>Plumbus Category</h1>
+    <div class="row mt-4" id="ean1">
+        <div class="col-sm-4">
+            <div class="text-center">
+                <img src="/img/plumbus1.jpg" alt="Original Plumbus" class="product-icon img-thumbnail"/>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h2>Original Plumbus</h2>
+            <button type="button" class="btn btn-primary add-to-cart" data-ean="1">Add to cart</button>
+        </div>
+    </div>
+    <div class="row mt-4" id="ean2">
+        <div class="col-sm-4">
+            <div class="text-center">
+                <img src="/img/plumbus2.jpg" alt="Plumbus" class="product-icon img-thumbnail"/>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h2>Just Another Plumbus</h2>
+            <button type="button" class="btn btn-primary add-to-cart" data-ean="2">Add to cart</button>
+        </div>
+    </div>
+    <div class="row mt-4" id="ean3">
+        <div class="col-sm-4">
+            <div class="text-center">
+                <img src="/img/plumbus3.png" alt="Plumbus Rick" class="product-icon img-thumbnail"/>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h2>Plumbus Rick!</h2>
+            <button type="button" class="btn btn-primary add-to-cart" data-ean="3">Add to cart</button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
